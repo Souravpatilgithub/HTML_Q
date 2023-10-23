@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+<head>
+   <link rel="stylesheet" href="cal_style.css">
+</head>
+<body>
+    <div class="main">
+        <input type="text" id = 'display'>
+        <div class="btn">
+           <input type="button" value = 'AC' onclick = "c_ac();">
+           <input type="button" value = '%' onclick = "c_per()">
+           <input type="button" value = 'DE' onclick ="c_de()">
+           <input type="button" value = '/' onclick = "c_div()">
+           <br>
+           <input type="button" value = '7' onclick = "c_seven()">
+           <input type="button" value = '8' onclick = "c_eight()">
+           <input type="button" value = '9' onclick = "c_nine()">
+           <input type="button" value = 'x' onclick = "c_multi()">
+           <br>
+           <input type="button" value = '4' onclick = "c_four()">
+           <input type="button" value = '5' onclick = "c_five()">
+           <input type="button" value = '6' onclick = "c_six()">
+           <input type="button" value = '-' onclick = "c_sub()">
+           <br>
+           <input type="button" value = '1' onclick = "c_one()">
+           <input type="button" value = '2' onclick = "c_two()">
+           <input type="button" value = '3' onclick = "c_three()">
+           <input type="button" value = '+' onclick = "c_add()">
+           <br>
+           <input type="button" value = '00'onclick = "c_zero1()">
+           <input type="button" value = '0' onclick = "c_zero()">
+           <input type="button" value = '.' onclick = "c_dot()">
+           <input type="button" value = '=' onclick = "c_Result()">
+      </div>
+   </div>
+   <script>
+      function c_one(){
+    var dis=document.getElementById("display").value;
+    dis +='1';
+    document.getElementById('display').value=dis;
+}
+function c_two(){
+    var dis=document.getElementById("display").value;
+    dis +='2';
+    document.getElementById('display').value=dis;
+}
+function c_three(){
+    var dis=document.getElementById("display").value;
+    dis +='3';
+    document.getElementById('display').value=dis;
+}
+function c_four(){
+    var dis=document.getElementById("display").value;
+    dis +='4';
+    document.getElementById('display').value=dis;
+}
+function c_five(){
+    var dis=document.getElementById("display").value;
+    dis +='5';
+    document.getElementById('display').value=dis;
+}
+function c_six(){
+    var dis=document.getElementById("display").value;
+    dis +='6';
+    document.getElementById('display').value=dis;
+}
+function c_seven(){
+    var dis=document.getElementById("display").value;
+    dis +='7';
+    document.getElementById('display').value=dis;
+}
+function c_eight(){
+    var dis=document.getElementById("display").value;
+    dis +='8';
+    document.getElementById('display').value=dis;
+}
+function c_nine(){
+    var dis=document.getElementById("display").value;
+    dis +='9';
+    document.getElementById('display').value=dis;
+}
+function c_zero(){
+    var dis=document.getElementById("display").value;
+    dis +='0';
+    document.getElementById('display').value=dis;
+}
+function c_zero1(){
+    var dis=document.getElementById("display").value;
+    dis +='00';
+    document.getElementById('display').value=dis;
+}
+function c_dot(){
+    var dis=document.getElementById("display").value;
+    dis +='.';
+    document.getElementById('display').value=dis;
+}
+function c_ac(){
+    var dis=document.getElementById("display").value;
+    dis2 ='';
+    document.getElementById('display').value=dis2;
+}
+function c_de(){
+    var dis=document.getElementById("display").value;
+    dis1 =dis.slice(0,-1);
+    document.getElementById('display').value=dis1;
+}
+function c_add(){
+    var dis=document.getElementById("display").value;
+    dis +='+';
+    document.getElementById('display').value=dis;
+}
+function c_sub(){
+    var dis=document.getElementById("display").value;
+    dis +='-';
+    document.getElementById('display').value=dis;
+}
+function c_multi(){
+    var dis=document.getElementById("display").value;
+    dis +='*';
+    document.getElementById('display').value=dis;
+}
+function c_div(){
+    var dis=document.getElementById("display").value;
+    dis +='/';
+    document.getElementById('display').value=dis;
+}
+function c_per(){
+    var dis=document.getElementById("display").value;
+ 
+        dis +='*100' 
+    document.getElementById('display').value=dis;
+   
+}
+function c_Result(){
+   var dis=document.getElementById("display").value;
+   var res=eval(dis);
+   document.getElementById('display').value=res
+}
+   </script>
+</body>
+</html>
